@@ -1,0 +1,271 @@
+Calibration days (BENIGN only):
+  2017 | monday: 1,512 flows, 11 sources
+  2017 | wednesday: 1,593 flows, 11 sources
+  2017 | thursday: 1,594 flows, 12 sources
+  2017 | friday: 1,458 flows, 11 sources
+  2018 | Friday-02-03-2018: 4,468 flows, 555 sources
+  2018 | Friday-16-02-2018: 2,670 flows, 707 sources
+  2018 | Friday-23-02-2018: 5,562 flows, 687 sources
+  2018 | Thursday-01-03-2018: 4,467 flows, 633 sources
+  2018 | Thursday-15-02-2018: 3,499 flows, 631 sources
+  2018 | Thursday-22-02-2018: 4,517 flows, 644 sources
+  2018 | Tuesday-20-02-2018: 2,447 flows, 565 sources
+  2018 | Wednesday-21-02-2018: 3,586 flows, 690 sources
+  2018 | Wednesday-28-02-2018: 3,592 flows, 685 sources
+Excluded on purpose: ['Wednesday-14-02-2018'] (2018 test) and tuesday (2017 development)
+
+[2017 | key src-dst-port] false-alarm episodes per day, worst/mean over 4 days
+        W=120s   W=900s  W=1800s
+T                               
+2    539/521.2  59/54.8  58/53.5
+3        0/0.0  63/59.2  51/49.2
+4        0/0.0  40/35.2  67/58.2
+5        0/0.0  42/38.5  57/51.0
+8        0/0.0  19/15.8  40/36.2
+10       0/0.0    6/2.8  35/31.8
+15       0/0.0    0/0.0    9/6.5
+20       0/0.0    0/0.0    1/0.5
+25       0/0.0    0/0.0    0/0.0
+30       0/0.0    0/0.0    0/0.0
+35       0/0.0    0/0.0    0/0.0
+40       0/0.0    0/0.0    0/0.0
+45       0/0.0    0/0.0    0/0.0
+50       0/0.0    0/0.0    0/0.0
+55       0/0.0    0/0.0    0/0.0
+60       0/0.0    0/0.0    0/0.0
+70       0/0.0    0/0.0    0/0.0
+80       0/0.0    0/0.0    0/0.0
+90       0/0.0    0/0.0    0/0.0
+100      0/0.0    0/0.0    0/0.0
+150      0/0.0    0/0.0    0/0.0
+200      0/0.0    0/0.0    0/0.0
+
+[2017 | key src-port] false-alarm episodes per day, worst/mean over 4 days
+        W=120s   W=900s  W=1800s
+T                               
+2    539/521.2  59/54.8  58/53.5
+3        0/0.0  64/59.5  51/49.2
+4        0/0.0  40/35.2  68/58.8
+5        0/0.0  42/38.5  57/51.0
+8        0/0.0  19/15.8  40/36.2
+10       0/0.0    6/2.8  35/31.8
+15       0/0.0    0/0.0    9/6.5
+20       0/0.0    0/0.0    1/0.5
+25       0/0.0    0/0.0    0/0.0
+30       0/0.0    0/0.0    0/0.0
+35       0/0.0    0/0.0    0/0.0
+40       0/0.0    0/0.0    0/0.0
+45       0/0.0    0/0.0    0/0.0
+50       0/0.0    0/0.0    0/0.0
+55       0/0.0    0/0.0    0/0.0
+60       0/0.0    0/0.0    0/0.0
+70       0/0.0    0/0.0    0/0.0
+80       0/0.0    0/0.0    0/0.0
+90       0/0.0    0/0.0    0/0.0
+100      0/0.0    0/0.0    0/0.0
+150      0/0.0    0/0.0    0/0.0
+200      0/0.0    0/0.0    0/0.0
+
+[2018 | key src-dst-port] false-alarm episodes per day, worst/mean over 9 days
+        W=120s     W=900s    W=1800s
+T                                   
+2    395/262.1  613/399.0  705/377.2
+3     118/57.8  208/120.8  350/135.7
+4      54/24.0   104/47.4   122/64.1
+5      40/13.0    62/25.7    78/38.9
+8       16/6.7    29/12.9    31/13.6
+10      11/4.6     17/9.0    17/10.2
+15       9/3.7     16/6.4     16/8.3
+20       8/1.6      9/2.3     13/4.7
+25       8/1.6      9/2.0     12/4.2
+30       8/1.3      9/2.0     10/2.7
+35       8/1.1      9/1.6      9/1.7
+40       7/1.0      9/1.4      9/1.6
+45       5/0.8      9/1.4      9/1.6
+50       1/0.2      8/1.3      9/1.6
+55       1/0.1      8/1.2      9/1.4
+60       0/0.0      7/1.0      7/1.1
+70       0/0.0      1/0.1      1/0.1
+80       0/0.0      1/0.1      1/0.1
+90       0/0.0      1/0.1      1/0.1
+100      0/0.0      0/0.0      1/0.1
+150      0/0.0      0/0.0      1/0.1
+200      0/0.0      0/0.0      0/0.0
+
+[2018 | key src-port] false-alarm episodes per day, worst/mean over 9 days
+        W=120s     W=900s    W=1800s
+T                                   
+2    469/343.7  541/403.7  487/359.2
+3    165/105.4  220/153.8  217/152.9
+4      96/56.1   133/87.1   141/94.4
+5      74/39.8    95/52.4    94/60.4
+8      49/23.8    59/26.2    54/27.9
+10     34/19.3    43/21.7    40/22.1
+15     32/18.3    33/18.7    31/17.7
+20     27/14.4    26/15.8    23/14.6
+25     24/13.1    22/13.3    21/12.6
+30     20/10.7    21/12.1    19/11.4
+35      18/9.2    20/11.0    18/10.8
+40      17/8.9    17/10.2     16/9.8
+45      17/8.7    18/10.1     16/9.7
+50      16/8.0     17/8.9     15/8.8
+55      14/7.2     15/8.4     13/8.2
+60      12/6.4     15/8.1     13/7.8
+70      12/6.2     15/7.4     13/7.1
+80      12/5.6     14/7.2     12/7.0
+90      11/5.2     14/6.9     12/6.7
+100     11/5.2     12/6.3     12/6.6
+150     10/4.9     10/5.1     10/5.6
+200      1/0.7      3/1.0      4/1.7
+
+[Operating points] smallest T whose worst-day episodes <= 5
+  2017 | src-dst-port | W=120s: T=3 | per-day [0, 0, 0, 0] | sources on worst day 0
+  2017 | src-dst-port | W=900s: T=15 | per-day [0, 0, 0, 0] | sources on worst day 0
+  2017 | src-dst-port | W=1800s: T=20 | per-day [1, 0, 1, 0] | sources on worst day 1
+  2017 | src-port | W=120s: T=3 | per-day [0, 0, 0, 0] | sources on worst day 0
+  2017 | src-port | W=900s: T=15 | per-day [0, 0, 0, 0] | sources on worst day 0
+  2017 | src-port | W=1800s: T=20 | per-day [1, 0, 1, 0] | sources on worst day 1
+  2018 | src-dst-port | W=120s: T=45 | per-day [0, 0, 1, 0, 0, 5, 1, 0, 0] | sources on worst day 1
+  2018 | src-dst-port | W=900s: T=70 | per-day [0, 0, 0, 1, 0, 0, 0, 0, 0] | sources on worst day 1
+  2018 | src-dst-port | W=1800s: T=70 | per-day [0, 0, 0, 1, 0, 0, 0, 0, 0] | sources on worst day 1
+  2018 | src-port | W=120s: T=200 | per-day [1, 0, 1, 1, 1, 1, 0, 0, 1] | sources on worst day 1
+  2018 | src-port | W=900s: T=200 | per-day [2, 0, 3, 1, 1, 1, 0, 0, 1] | sources on worst day 3
+  2018 | src-port | W=1800s: T=200 | per-day [4, 0, 3, 1, 1, 4, 0, 1, 1] | sources on worst day 4
+
+[Alarm sources] who raises the false alarms (top 8 per point)
+  2017 | src-dst-port | W=120s | T=3 (chosen): 0 episodes from 0 source(s)
+  2017 | src-dst-port | W=120s | T=2 (one grid step below): 2085 episodes from 11 source(s)
+      192.168.10.15 [private]: 237 episodes on 4 day(s), 654 flows on those days
+      192.168.10.9 [private]: 226 episodes on 4 day(s), 633 flows on those days
+      192.168.10.5 [private]: 218 episodes on 4 day(s), 639 flows on those days
+      192.168.10.14 [private]: 216 episodes on 4 day(s), 621 flows on those days
+      192.168.10.16 [private]: 211 episodes on 4 day(s), 625 flows on those days
+      192.168.10.12 [private]: 208 episodes on 4 day(s), 604 flows on those days
+      192.168.10.19 [private]: 204 episodes on 4 day(s), 588 flows on those days
+      192.168.10.17 [private]: 204 episodes on 4 day(s), 577 flows on those days
+  2017 | src-dst-port | W=900s | T=15 (chosen): 0 episodes from 0 source(s)
+  2017 | src-dst-port | W=900s | T=10 (one grid step below): 11 episodes from 6 source(s)
+      192.168.10.5 [private]: 3 episodes on 3 day(s), 473 flows on those days
+      192.168.10.19 [private]: 3 episodes on 3 day(s), 449 flows on those days
+      192.168.10.9 [private]: 2 episodes on 2 day(s), 310 flows on those days
+      192.168.10.8 [private]: 1 episodes on 1 day(s), 136 flows on those days
+      192.168.10.15 [private]: 1 episodes on 1 day(s), 173 flows on those days
+      192.168.10.51 [private]: 1 episodes on 1 day(s), 152 flows on those days
+  2017 | src-dst-port | W=1800s | T=20 (chosen): 2 episodes from 1 source(s)
+      192.168.10.5 [private]: 2 episodes on 2 day(s), 310 flows on those days
+  2017 | src-dst-port | W=1800s | T=15 (one grid step below): 26 episodes from 10 source(s)
+      192.168.10.15 [private]: 4 episodes on 3 day(s), 494 flows on those days
+      192.168.10.9 [private]: 4 episodes on 3 day(s), 476 flows on those days
+      192.168.10.19 [private]: 3 episodes on 3 day(s), 449 flows on those days
+      192.168.10.5 [private]: 3 episodes on 3 day(s), 473 flows on those days
+      192.168.10.17 [private]: 3 episodes on 3 day(s), 435 flows on those days
+      192.168.10.14 [private]: 2 episodes on 2 day(s), 311 flows on those days
+      192.168.10.16 [private]: 2 episodes on 2 day(s), 309 flows on those days
+      192.168.10.51 [private]: 2 episodes on 2 day(s), 310 flows on those days
+  2017 | src-port | W=120s | T=3 (chosen): 0 episodes from 0 source(s)
+  2017 | src-port | W=120s | T=2 (one grid step below): 2085 episodes from 11 source(s)
+      192.168.10.15 [private]: 237 episodes on 4 day(s), 654 flows on those days
+      192.168.10.9 [private]: 226 episodes on 4 day(s), 633 flows on those days
+      192.168.10.5 [private]: 218 episodes on 4 day(s), 639 flows on those days
+      192.168.10.14 [private]: 216 episodes on 4 day(s), 621 flows on those days
+      192.168.10.16 [private]: 211 episodes on 4 day(s), 625 flows on those days
+      192.168.10.12 [private]: 208 episodes on 4 day(s), 604 flows on those days
+      192.168.10.19 [private]: 204 episodes on 4 day(s), 588 flows on those days
+      192.168.10.17 [private]: 204 episodes on 4 day(s), 577 flows on those days
+  2017 | src-port | W=900s | T=15 (chosen): 0 episodes from 0 source(s)
+  2017 | src-port | W=900s | T=10 (one grid step below): 11 episodes from 6 source(s)
+      192.168.10.5 [private]: 3 episodes on 3 day(s), 473 flows on those days
+      192.168.10.19 [private]: 3 episodes on 3 day(s), 449 flows on those days
+      192.168.10.9 [private]: 2 episodes on 2 day(s), 310 flows on those days
+      192.168.10.8 [private]: 1 episodes on 1 day(s), 136 flows on those days
+      192.168.10.15 [private]: 1 episodes on 1 day(s), 173 flows on those days
+      192.168.10.51 [private]: 1 episodes on 1 day(s), 152 flows on those days
+  2017 | src-port | W=1800s | T=20 (chosen): 2 episodes from 1 source(s)
+      192.168.10.5 [private]: 2 episodes on 2 day(s), 310 flows on those days
+  2017 | src-port | W=1800s | T=15 (one grid step below): 26 episodes from 10 source(s)
+      192.168.10.15 [private]: 4 episodes on 3 day(s), 494 flows on those days
+      192.168.10.9 [private]: 4 episodes on 3 day(s), 476 flows on those days
+      192.168.10.19 [private]: 3 episodes on 3 day(s), 449 flows on those days
+      192.168.10.5 [private]: 3 episodes on 3 day(s), 473 flows on those days
+      192.168.10.17 [private]: 3 episodes on 3 day(s), 435 flows on those days
+      192.168.10.14 [private]: 2 episodes on 2 day(s), 311 flows on those days
+      192.168.10.16 [private]: 2 episodes on 2 day(s), 309 flows on those days
+      192.168.10.51 [private]: 2 episodes on 2 day(s), 310 flows on those days
+  2018 | src-dst-port | W=120s | T=45 (chosen): 7 episodes from 3 source(s)
+      199.195.249.132 [public]: 5 episodes on 1 day(s), 476 flows on those days
+      79.19.203.154 [public]: 1 episodes on 1 day(s), 52 flows on those days
+      177.137.240.126 [public]: 1 episodes on 1 day(s), 55 flows on those days
+  2018 | src-dst-port | W=120s | T=40 (one grid step below): 9 episodes from 3 source(s)
+      199.195.249.132 [public]: 7 episodes on 1 day(s), 476 flows on those days
+      79.19.203.154 [public]: 1 episodes on 1 day(s), 52 flows on those days
+      177.137.240.126 [public]: 1 episodes on 1 day(s), 55 flows on those days
+  2018 | src-dst-port | W=900s | T=70 (chosen): 1 episodes from 1 source(s)
+      123.183.209.137 [public]: 1 episodes on 1 day(s), 174 flows on those days
+  2018 | src-dst-port | W=900s | T=60 (one grid step below): 9 episodes from 3 source(s)
+      199.195.249.132 [public]: 7 episodes on 1 day(s), 476 flows on those days
+      123.183.209.137 [public]: 1 episodes on 1 day(s), 174 flows on those days
+      195.22.125.42 [public]: 1 episodes on 1 day(s), 154 flows on those days
+  2018 | src-dst-port | W=1800s | T=70 (chosen): 1 episodes from 1 source(s)
+      123.183.209.137 [public]: 1 episodes on 1 day(s), 174 flows on those days
+  2018 | src-dst-port | W=1800s | T=60 (one grid step below): 10 episodes from 4 source(s)
+      199.195.249.132 [public]: 7 episodes on 1 day(s), 476 flows on those days
+      123.249.76.37 [public]: 1 episodes on 1 day(s), 64 flows on those days
+      123.183.209.137 [public]: 1 episodes on 1 day(s), 174 flows on those days
+      195.22.125.42 [public]: 1 episodes on 1 day(s), 154 flows on those days
+  2018 | src-port | W=120s | T=200 (chosen): 6 episodes from 1 source(s)
+      5.101.40.10 [public]: 6 episodes on 6 day(s), 2,310 flows on those days
+  2018 | src-port | W=120s | T=150 (one grid step below): 44 episodes from 30 source(s)
+      5.101.40.10 [public]: 6 episodes on 6 day(s), 2,310 flows on those days
+      111.230.247.116 [public]: 4 episodes on 1 day(s), 632 flows on those days
+      18.218.1.178 [public]: 3 episodes on 1 day(s), 477 flows on those days
+      192.241.174.52 [public]: 3 episodes on 2 day(s), 482 flows on those days
+      18.217.96.180 [public]: 2 episodes on 1 day(s), 383 flows on those days
+      52.224.180.249 [public]: 2 episodes on 2 day(s), 433 flows on those days
+      1.234.82.52 [public]: 1 episodes on 1 day(s), 161 flows on those days
+      115.178.77.151 [public]: 1 episodes on 1 day(s), 632 flows on those days
+  2018 | src-port | W=900s | T=200 (chosen): 9 episodes from 4 source(s)
+      5.101.40.10 [public]: 6 episodes on 6 day(s), 2,310 flows on those days
+      111.230.247.116 [public]: 1 episodes on 1 day(s), 632 flows on those days
+      18.217.96.180 [public]: 1 episodes on 1 day(s), 383 flows on those days
+      18.218.1.178 [public]: 1 episodes on 1 day(s), 477 flows on those days
+  2018 | src-port | W=900s | T=150 (one grid step below): 46 episodes from 33 source(s)
+      5.101.40.10 [public]: 6 episodes on 6 day(s), 2,310 flows on those days
+      111.230.247.116 [public]: 3 episodes on 1 day(s), 632 flows on those days
+      192.241.174.52 [public]: 3 episodes on 2 day(s), 482 flows on those days
+      18.218.1.178 [public]: 2 episodes on 1 day(s), 477 flows on those days
+      18.217.96.180 [public]: 2 episodes on 1 day(s), 383 flows on those days
+      52.224.180.249 [public]: 2 episodes on 2 day(s), 433 flows on those days
+      20.190.41.227 [public]: 2 episodes on 1 day(s), 434 flows on those days
+      1.234.82.52 [public]: 1 episodes on 1 day(s), 161 flows on those days
+  2018 | src-port | W=1800s | T=200 (chosen): 15 episodes from 9 source(s)
+      5.101.40.10 [public]: 6 episodes on 6 day(s), 2,310 flows on those days
+      199.195.249.132 [public]: 2 episodes on 1 day(s), 476 flows on those days
+      188.35.187.50 [public]: 1 episodes on 1 day(s), 230 flows on those days
+      115.178.77.151 [public]: 1 episodes on 1 day(s), 632 flows on those days
+      111.230.247.116 [public]: 1 episodes on 1 day(s), 632 flows on those days
+      18.217.96.180 [public]: 1 episodes on 1 day(s), 383 flows on those days
+      18.218.1.178 [public]: 1 episodes on 1 day(s), 477 flows on those days
+      20.190.41.227 [public]: 1 episodes on 1 day(s), 434 flows on those days
+  2018 | src-port | W=1800s | T=150 (one grid step below): 50 episodes from 36 source(s)
+      5.101.40.10 [public]: 6 episodes on 6 day(s), 2,310 flows on those days
+      115.178.77.151 [public]: 3 episodes on 3 day(s), 1,059 flows on those days
+      111.230.247.116 [public]: 3 episodes on 1 day(s), 632 flows on those days
+      192.241.174.52 [public]: 3 episodes on 2 day(s), 482 flows on those days
+      52.224.180.249 [public]: 2 episodes on 2 day(s), 433 flows on those days
+      199.195.249.132 [public]: 2 episodes on 1 day(s), 476 flows on those days
+      20.190.41.227 [public]: 2 episodes on 1 day(s), 434 flows on those days
+      1.234.82.52 [public]: 1 episodes on 1 day(s), 161 flows on those days
+
+[Hard negatives] port-scan flows at the chosen T: episodes per day
+  2017 | src-dst-port | W=120s | T=3 -> friday: 10; thursday: 8
+  2017 | src-dst-port | W=900s | T=15 -> friday: 4; thursday: 2
+  2017 | src-dst-port | W=1800s | T=20 -> friday: 4; thursday: 2
+  2017 | src-port | W=120s | T=3 -> friday: 10; thursday: 9
+  2017 | src-port | W=900s | T=15 -> friday: 4; thursday: 2
+  2017 | src-port | W=1800s | T=20 -> friday: 4; thursday: 2
+  2018 | src-dst-port | W=120s | T=45 -> Thursday-01-03-2018: 0; Wednesday-28-02-2018: 0
+  2018 | src-dst-port | W=900s | T=70 -> Thursday-01-03-2018: 0; Wednesday-28-02-2018: 0
+  2018 | src-dst-port | W=1800s | T=70 -> Thursday-01-03-2018: 5; Wednesday-28-02-2018: 8
+  2018 | src-port | W=120s | T=200 -> Thursday-01-03-2018: 0; Wednesday-28-02-2018: 0
+  2018 | src-port | W=900s | T=200 -> Thursday-01-03-2018: 3; Wednesday-28-02-2018: 2
+  2018 | src-port | W=1800s | T=200 -> Thursday-01-03-2018: 2; Wednesday-28-02-2018: 2

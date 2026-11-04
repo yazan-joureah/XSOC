@@ -1,0 +1,41 @@
+Frozen 2026-10-29 (written after calibration, before any attack measurement; rates seen earlier are disclosed).
+FIELD 1: PASS if the main attack episode alarms at ALL primary points of this dataset.
+FIELD 2: PASS if its first alarm comes before the attacker sent 100 flows to the same target (flow index < 100).
+REPORT ONLY (no pass/fail): Attempted, Portscan, secondary points. Unit = flow (a flow may hold several attempts).
+
+Stage dev: 2017 / tuesday: 8,515 flows
+labels -> main: ['FTP-Patator', 'SSH-Patator'] | attempted: ['FTP-Patator - Attempted', 'SSH-Patator - Attempted'] | port-scan: []
+
+--- PRIMARY W=120s T=3 ---
+  MAIN FTP-Patator: key ('172.16.0.1', '192.168.10.50', 21) | 3,972 FTP-Patator flows, 3,984 flows in key (also: FTP-Patator - Attempted)
+      first alarm at flow #2 of the key (87s after its first flow)
+  MAIN SSH-Patator: key ('172.16.0.1', '192.168.10.50', 22) | 2,961 SSH-Patator flows, 2,988 flows in key (also: SSH-Patator - Attempted)
+      first alarm at flow #3 of the key (0s after its first flow)
+  ATTEMPTED FTP-Patator - Attempted: 12 flows in 1 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 2/2/2) | NOTE: shares keys with main-attack flows
+  ATTEMPTED SSH-Patator - Attempted: 27 flows in 1 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 3/3/3) | NOTE: shares keys with main-attack flows
+
+--- PRIMARY W=900s T=15 ---
+  MAIN FTP-Patator: key ('172.16.0.1', '192.168.10.50', 21) | 3,972 FTP-Patator flows, 3,984 flows in key (also: FTP-Patator - Attempted)
+      first alarm at flow #15 of the key (97s after its first flow)
+  MAIN SSH-Patator: key ('172.16.0.1', '192.168.10.50', 22) | 2,961 SSH-Patator flows, 2,988 flows in key (also: SSH-Patator - Attempted)
+      first alarm at flow #15 of the key (14s after its first flow)
+  ATTEMPTED FTP-Patator - Attempted: 12 flows in 1 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 15/15/15) | NOTE: shares keys with main-attack flows
+  ATTEMPTED SSH-Patator - Attempted: 27 flows in 1 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 15/15/15) | NOTE: shares keys with main-attack flows
+
+--- PRIMARY W=1800s T=20 ---
+  MAIN FTP-Patator: key ('172.16.0.1', '192.168.10.50', 21) | 3,972 FTP-Patator flows, 3,984 flows in key (also: FTP-Patator - Attempted)
+      first alarm at flow #20 of the key (97s after its first flow)
+  MAIN SSH-Patator: key ('172.16.0.1', '192.168.10.50', 22) | 2,961 SSH-Patator flows, 2,988 flows in key (also: SSH-Patator - Attempted)
+      first alarm at flow #20 of the key (14s after its first flow)
+  ATTEMPTED FTP-Patator - Attempted: 12 flows in 1 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 20/20/20) | NOTE: shares keys with main-attack flows
+  ATTEMPTED SSH-Patator - Attempted: 27 flows in 1 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 20/20/20) | NOTE: shares keys with main-attack flows
+
+[VERDICT, primary points only]
+  FIELD 1 (detection): PASS
+  FIELD 2 (alarm before flow #100): PASS
+  Overall acceptance needs BOTH stages (dev and test) to pass.
+
+[PORT-SCAN CHECK] report only; scan flows alone, same method as calibrate.py (episodes per day)
+  [primary] W=120s T=3 -> friday: 10; thursday: 8
+  [primary] W=900s T=15 -> friday: 4; thursday: 2
+  [primary] W=1800s T=20 -> friday: 4; thursday: 2

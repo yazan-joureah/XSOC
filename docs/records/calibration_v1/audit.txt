@@ -1,0 +1,76 @@
+[SECONDARY | 2017] distinct alarming sources per day, worst/mean over 4 days (key src-dst-port)
+  (added AFTER seeing the first results; the primary criterion stays: episodes)
+      W=120s   W=900s  W=1800s
+T                             
+2    11/10.0  12/11.0  12/11.0
+3      0/0.0  12/11.0  12/11.0
+4      0/0.0  12/11.0  12/11.0
+5      0/0.0  12/10.2  12/11.0
+8      0/0.0   10/9.5  12/10.2
+10     0/0.0    6/2.8   10/9.8
+15     0/0.0    0/0.0    8/6.0
+20     0/0.0    0/0.0    1/0.5
+25     0/0.0    0/0.0    0/0.0
+30     0/0.0    0/0.0    0/0.0
+35     0/0.0    0/0.0    0/0.0
+40     0/0.0    0/0.0    0/0.0
+45     0/0.0    0/0.0    0/0.0
+50     0/0.0    0/0.0    0/0.0
+55     0/0.0    0/0.0    0/0.0
+60     0/0.0    0/0.0    0/0.0
+70     0/0.0    0/0.0    0/0.0
+80     0/0.0    0/0.0    0/0.0
+90     0/0.0    0/0.0    0/0.0
+100    0/0.0    0/0.0    0/0.0
+150    0/0.0    0/0.0    0/0.0
+200    0/0.0    0/0.0    0/0.0 
+
+[SECONDARY | 2018] distinct alarming sources per day, worst/mean over 9 days (key src-dst-port)
+  (added AFTER seeing the first results; the primary criterion stays: episodes)
+        W=120s     W=900s    W=1800s
+T                                   
+2    167/128.0  224/165.9  247/179.2
+3      37/25.4    72/48.0   102/63.4
+4       14/9.2    32/18.3    59/32.4
+5        9/5.4    22/10.9    37/19.1
+8        6/2.9      9/5.6     10/6.3
+10       4/2.3      7/4.3      8/4.8
+15       3/2.0      6/3.4      6/4.1
+20       2/0.8      3/1.2      4/2.1
+25       2/0.8      3/1.1      4/1.9
+30       2/0.7      3/1.1      4/1.4
+35       2/0.4      3/0.9      3/1.0
+40       1/0.3      3/0.8      3/0.9
+45       1/0.3      3/0.8      3/0.9
+50       1/0.2      2/0.7      3/0.9
+55       1/0.1      2/0.6      3/0.8
+60       0/0.0      1/0.3      1/0.4
+70       0/0.0      1/0.1      1/0.1
+80       0/0.0      1/0.1      1/0.1
+90       0/0.0      1/0.1      1/0.1
+100      0/0.0      0/0.0      1/0.1
+150      0/0.0      0/0.0      1/0.1
+200      0/0.0      0/0.0      0/0.0 
+
+[CALIBRATION SUMMARY v1] smallest grid T with worst day <= 5; key src-dst-port
+  2017 | W=120s | primary (episodes) T=3 | secondary (cases) T=3
+  2017 | W=900s | primary (episodes) T=15 | secondary (cases) T=15
+  2017 | W=1800s | primary (episodes) T=20 | secondary (cases) T=20
+  2018 | W=120s | primary (episodes) T=45 | secondary (cases) T=10
+  2018 | W=900s | primary (episodes) T=70 | secondary (cases) T=20
+  2018 | W=1800s | primary (episodes) T=70 | secondary (cases) T=20
+
+[AUDIT 2018] sources alarming at W:T = ['120:40', '900:60', '1800:60'] (6 source(s); showing 6)
+                                     who    type             alarms_at  flows  days  targets  max_to_one_target  share_port22  median_gap_s  flows_per_active_min  peak_in_120s
+            REF 2017 tuesday FTP-Patator private                     -   3972     1        1               3972           0.0           0.2                  64.1           140
+REF 2017 tuesday FTP-Patator - Attempted private                     -     12     1        1                 12           0.0           0.0                   4.0            11
+            REF 2017 tuesday SSH-Patator private                     -   2961     1        1               2961           1.0           0.5                  46.3           110
+REF 2017 tuesday SSH-Patator - Attempted private                     -     27     1        1                 27           1.0           0.4                   4.5            24
+                         199.195.249.132  public 120:40 1800:60 900:60    476     1        7                 68           1.0           2.8                  18.3            49
+                         123.183.209.137  public        1800:60 900:60    174     1        1                174           1.0           7.9                   5.4            19
+                           195.22.125.42  public        1800:60 900:60    154     1        6                 61           1.0           0.2                   9.1            32
+                           123.249.76.37  public               1800:60     64     1        1                 64           1.0          24.1                   2.5             6
+                         177.137.240.126  public                120:40     55     1        1                 55           1.0           1.0                  27.5            55
+                           79.19.203.154  public                120:40     52     1        1                 52           1.0           0.8                  26.0            52
+
+Wednesday-14 was not used anywhere in this run.

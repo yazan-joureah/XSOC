@@ -1,0 +1,50 @@
+Frozen 2026-10-29 (written after calibration, before any attack measurement; rates seen earlier are disclosed).
+FIELD 1: PASS if the main attack episode alarms at ALL primary points of this dataset.
+FIELD 2: PASS if its first alarm comes before the attacker sent 100 flows to the same target (flow index < 100).
+REPORT ONLY (no pass/fail): Attempted, Portscan, secondary points. Unit = flow (a flow may hold several attempts).
+
+Stage test: 2018 / Wednesday-14-02-2018: 290,897 flows
+labels -> main: ['SSH-BruteForce'] | attempted: ['FTP-BruteForce - Attempted'] | port-scan: []
+
+--- PRIMARY W=120s T=45 ---
+  MAIN SSH-BruteForce: key ('13.58.98.64', '172.31.69.25', 22) | 94,197 SSH-BruteForce flows, 94,207 flows in key (also: BENIGN)
+      first alarm at flow #45 of the key (2s after its first flow)
+  ATTEMPTED FTP-BruteForce - Attempted: 193,354 flows in 2 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 45/45/45)
+
+--- PRIMARY W=900s T=70 ---
+  MAIN SSH-BruteForce: key ('13.58.98.64', '172.31.69.25', 22) | 94,197 SSH-BruteForce flows, 94,207 flows in key (also: BENIGN)
+      first alarm at flow #70 of the key (4s after its first flow)
+  ATTEMPTED FTP-BruteForce - Attempted: 193,354 flows in 2 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 70/70/70)
+
+--- PRIMARY W=1800s T=70 ---
+  MAIN SSH-BruteForce: key ('13.58.98.64', '172.31.69.25', 22) | 94,197 SSH-BruteForce flows, 94,207 flows in key (also: BENIGN)
+      first alarm at flow #70 of the key (4s after its first flow)
+  ATTEMPTED FTP-BruteForce - Attempted: 193,354 flows in 2 key(s); keys with an alarm: 1 (first-alarm flow # min/median/max = 70/70/70)
+
+--- SECONDARY (report only) W=120s T=10 ---
+  MAIN SSH-BruteForce: key ('13.58.98.64', '172.31.69.25', 22) | 94,197 SSH-BruteForce flows, 94,207 flows in key (also: BENIGN)
+      first alarm at flow #10 of the key (0s after its first flow)
+  ATTEMPTED FTP-BruteForce - Attempted: 193,354 flows in 2 key(s); keys with an alarm: 2 (first-alarm flow # min/median/max = 10/10/10)
+
+--- SECONDARY (report only) W=900s T=20 ---
+  MAIN SSH-BruteForce: key ('13.58.98.64', '172.31.69.25', 22) | 94,197 SSH-BruteForce flows, 94,207 flows in key (also: BENIGN)
+      first alarm at flow #20 of the key (1s after its first flow)
+  ATTEMPTED FTP-BruteForce - Attempted: 193,354 flows in 2 key(s); keys with an alarm: 2 (first-alarm flow # min/median/max = 20/20/20)
+
+--- SECONDARY (report only) W=1800s T=20 ---
+  MAIN SSH-BruteForce: key ('13.58.98.64', '172.31.69.25', 22) | 94,197 SSH-BruteForce flows, 94,207 flows in key (also: BENIGN)
+      first alarm at flow #20 of the key (1s after its first flow)
+  ATTEMPTED FTP-BruteForce - Attempted: 193,354 flows in 2 key(s); keys with an alarm: 2 (first-alarm flow # min/median/max = 20/20/20)
+
+[VERDICT, primary points only]
+  FIELD 1 (detection): PASS
+  FIELD 2 (alarm before flow #100): PASS
+  Overall acceptance needs BOTH stages (dev and test) to pass.
+
+[PORT-SCAN CHECK] report only; scan flows alone, same method as calibrate.py (episodes per day)
+  [primary] W=120s T=45 -> Thursday-01-03-2018: 0; Wednesday-28-02-2018: 0
+  [primary] W=900s T=70 -> Thursday-01-03-2018: 0; Wednesday-28-02-2018: 0
+  [primary] W=1800s T=70 -> Thursday-01-03-2018: 5; Wednesday-28-02-2018: 8
+  [secondary] W=120s T=10 -> Thursday-01-03-2018: 17; Wednesday-28-02-2018: 21
+  [secondary] W=900s T=20 -> Thursday-01-03-2018: 17; Wednesday-28-02-2018: 21
+  [secondary] W=1800s T=20 -> Thursday-01-03-2018: 12; Wednesday-28-02-2018: 13

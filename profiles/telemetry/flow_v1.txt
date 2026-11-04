@@ -1,0 +1,55 @@
+# flow_v1 -- FROZEN 2026-10-23. Fixed flow-metric list for CICFlowMeter flow records (CIC-IDS2017 / CSE-CIC-IDS2018 'improved' exports).
+# 52 columns = the 68-column candidate pool minus 16 columns excluded by column_shift (X1). No shortened list passed the held-out check (C1), so the last cell of the chain was frozen.
+# How it was chosen, the exact results and the limits: flow_v1_record.md. Changing this list = a new registry version (flow_v2) after a test; never edit this file.
+Packet Length Variance
+Bwd Packet Length Std
+Flow Duration
+ACK Flag Count
+Total Bwd packets
+Packet Length Std
+PSH Flag Count
+Fwd PSH Flags
+Bwd PSH Flags
+Bwd Packet Length Mean
+Bwd Packet Length Max
+Total Length of Bwd Packet
+Packet Length Max
+Active Mean
+Idle Mean
+Total Length of Fwd Packet
+Active Min
+Active Max
+Fwd Header Length
+Fwd Packet Length Mean
+Fwd Packet Length Max
+Average Packet Size
+Fwd Act Data Pkts
+Bwd IAT Min
+Bwd Packet Length Min
+Packet Length Min
+Fwd Packet Length Min
+Bwd Header Length
+Fwd Packet Length Std
+Protocol
+Bwd RST Flags
+Total Fwd Packet
+Fwd IAT Total
+Fwd IAT Max
+Bwd IAT Max
+Bwd IAT Total
+ICMP Type
+ICMP Code
+Total TCP Flow Time
+Fwd IAT Min
+Fwd Bulk Rate Avg
+Fwd Packet/Bulk Avg
+Fwd Bytes/Bulk Avg
+Bwd Bulk Rate Avg
+Bwd Bytes/Bulk Avg
+FIN Flag Count
+Idle Std
+Active Std
+SYN Flag Count
+Bwd IAT Std
+Flow IAT Min
+Fwd RST Flags
