@@ -1,0 +1,11 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+data/slice/
+*.log
+*.tmp
+.idea/
+.vscode/
+.kiro/
